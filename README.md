@@ -14,7 +14,7 @@ This demo is implemented in [Jade (aka Pug)](https://www.jade-lang.org), an exte
 
 ```bash
 sudo npm install --global harp
-git clone https://github.com/explosion/displacy-ent
+https://github.com/developer21github/displacy-ent.git
 cd displacy-ent
 harp server
 ```
