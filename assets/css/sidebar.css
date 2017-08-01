@@ -1,0 +1,215 @@
+@font-face {
+    font-family: "Sailec";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://demos.explosion.ai/assets/fonts/321F59_2_0.eot");
+    src: url("https://demos.explosion.ai/assets/fonts/321F59_2_0.eot?#iefix") format("embedded-opentype"), url("https://demos.explosion.ai/assets/fonts/321F59_2_0.woff2") format("woff2"), url("https://demos.explosion.ai/assets/fonts/321F59_2_0.woff") format("woff"), url("https://demos.explosion.ai/assets/fonts/321F59_2_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Sailec";
+    font-style: italic;
+    font-weight: 400;
+    src: url("https://demos.explosion.ai/assets/fonts/321F59_3_0.eot");
+    src: url("https://demos.explosion.ai/assets/fonts/321F59_3_0.eot?#iefix") format("embedded-opentype"), url("https://demos.explosion.ai/assets/fonts/321F59_3_0.woff2") format("woff2"), url("https://demos.explosion.ai/assets/fonts/321F59_3_0.woff") format("woff"), url("https://demos.explosion.ai/assets/fonts/321F59_3_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Sailec";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://demos.explosion.ai/assets/fonts/321F59_0_0.eot");
+    src: url("https://demos.explosion.ai/assets/fonts/321F59_0_0.eot?#iefix") format("embedded-opentype"), url("https://demos.explosion.ai/assets/fonts/321F59_0_0.woff2") format("woff2"), url("https://demos.explosion.ai/assets/fonts/321F59_0_0.woff") format("woff"), url("https://demos.explosion.ai/assets/fonts/321F59_0_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Sailec";
+    font-style: italic;
+    font-weight: 700;
+    src: url("https://demos.explosion.ai/assets/fonts/321F59_1_0.eot");
+    src: url("https://demos.explosion.ai/assets/fonts/321F59_1_0.eot?#iefix") format("embedded-opentype"), url("https://demos.explosion.ai/assets/fonts/321F59_1_0.woff2") format("woff2"), url("https://demos.explosion.ai/assets/fonts/321F59_1_0.woff") format("woff"), url("https://demos.explosion.ai/assets/fonts/321F59_1_0.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Input Mono Compressed";
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://demos.explosion.ai/assets/fonts/inputmonocompressed-regular.eot");
+    src: url("https://demos.explosion.ai/assets/fonts/inputmonocompressed-regular.eot?#iefix") format("embedded-opentype"), url("https://demos.explosion.ai/assets/fonts/inputmonocompressed-regular.woff") format("woff"), url("https://demos.explosion.ai/assets/fonts/inputmonocompressed-regular.woff2") format("woff2"), url("https://demos.explosion.ai/assets/fonts/inputmonocompressed-regular.svg#InputMonoCompressed-Regular") format("svg")
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: hidden;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition: -webkit-transform 0.25s ease;
+    transition: -webkit-transform 0.25s ease;
+    transition: transform 0.25s ease;
+    transition: transform 0.25s ease, -webkit-transform 0.25s ease
+}
+
+@media (max-width: 767px) {
+    body {
+        width: calc(100% + 225px);
+        -webkit-transform: translateX(-225px);
+        transform: translateX(-225px)
+    }
+}
+
+.toggle-sidebar {
+    width: calc(100% + 225px);
+    -webkit-transform: translateX(-225px);
+    transform: translateX(-225px)
+}
+
+@media (max-width: 767px) {
+    .toggle-sidebar {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.o-toggle {
+    position: absolute;
+    top: calc(50vh - 15px);
+    left: 235px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 1px #ddd;
+    padding: 5px;
+    z-index: 500;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease
+}
+
+@media (max-width: 767px) {
+    .o-toggle {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+}
+
+.toggle-sidebar .o-toggle {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(360deg)
+}
+
+@media (max-width: 767px) {
+    .toggle-sidebar .o-toggle {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+.o-logo {
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease
+}
+
+.o-logo:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+}
+
+.o-icon-search {
+    vertical-align: middle;
+
+}
+.o-icon {
+    vertical-align: middle;
+    transform: rotate(180deg);
+}
+.c-sidebar {
+    height: auto;
+    width: 250px;
+    font: normal normal 1rem/1.5 "Sailec", Helvetica, Arial, sans-serif;
+    background: #fff;
+    color: #000;
+    min-height: 100%;
+    position: relative;
+    padding-right: 25px;
+    -webkit-box-flex: 250px;
+    -ms-flex: 250px 0 0;
+    flex: 250px 0 0;
+    border-right: 1px solid #ddd
+}
+
+.c-sidebar__header {
+    padding: 1rem
+}
+
+.c-sidebar__item {
+    position: relative;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ddd
+}
+
+.c-sidebar__item.c-sidebar__item--head {
+    font: normal bold 1.35rem "Sailec", Helvetica, Arial, sans-serif;
+    border-bottom: 3px solid
+}
+
+.c-sidebar__item:last-child {
+    margin-bottom: 2rem
+}
+
+.c-sidebar__item.is-active {
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+
+.c-sidebar__item.is-active .c-sidebar__item__title {
+    font-weight: bold
+}
+
+.c-sidebar__item__desc {
+    font-size: 0.8rem;
+    margin-bottom: 1rem
+}
+
+.c-sidebar__item__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: bold
+}
+
+.c-sidebar__item__links > *:not(:last-child) {
+    margin-right: 0.85rem
+}
+
+.c-ribbon {
+    position: absolute;
+    top: 30px;
+    right: -60px;
+    display: block;
+    font-size: 0.75rem;
+    background: #fff;
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 100
+}
