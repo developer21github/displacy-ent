@@ -1,6 +1,6 @@
 <a href="https://explosion.ai"><img src="https://explosion.ai/assets/img/logo.svg" width="125" height="125" align="right" /></a>
 
-# John Snow Labs ENT: A modern named entity visualiser
+# displaCy ENT: A modern named entity visualiser
 
 Data exploration is an important part of effective named entity recognition because systems often make common unexpected errors that are easily fixed once identified. Despite the apparent simplicity of the task, automatic named entity recognition systems still make many errors, unless trained on examples closely tailored to the use-case. Check out the [demo](https://demos.explosion.ai/displacy-ent) to visualise [spaCy](https://spacy.io)'s guess at the named entities in the document. You can filter the displayed types, to only show the annotations you're interested in.
 
@@ -14,7 +14,7 @@ This demo is implemented in [Jade (aka Pug)](https://www.jade-lang.org), an exte
 
 ```bash
 sudo npm install --global harp
-https://github.com/developer21github/displacy-ent.git
+git clone https://github.com/explosion/displacy-ent
 cd displacy-ent
 harp server
 ```

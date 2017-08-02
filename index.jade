@@ -18,15 +18,15 @@ header.o-banner
 
 .o-container.u-text-medium.entities#displacy
 
-footer.o-banner
-    h2.u-heading-2 Copy markup
-    p.o-block.
-        Here's everything you need to export and style the annotations. We &hearts; web standards!#[br]
-
-        #[strong Tip:] Copy-paste this over to #[+a("https://codepen.io") CodePen] for the quickest results.
-
-    .o-form
-        each area in ["HTML", "CSS"]
-            +textarea(area + " code here...", area).u-code.u-text-small(id=area.toLowerCase())
+//footer.o-banner
+//    h2.u-heading-2 Copy markup
+//    p.o-block.
+//        Here's everything you need to export and style the annotations. We &hearts; web standards!#[br]
+//
+//        #[strong Tip:] Copy-paste this over to #[+a("https://codepen.io") CodePen] for the quickest results.
+//
+//    .o-form
+//        each area in ["HTML", "CSS"]
+//            +textarea(area + " code here...", area).u-code.u-text-small(id=area.toLowerCase())
 
 +error("Oops, something went wrong. Please try again!")

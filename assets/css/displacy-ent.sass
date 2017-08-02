@@ -2,8 +2,10 @@
 //- 💥 DISPLACY ENT
 //- ----------------------------------
 
-$entities: ( person: #a6e22d, norp: #e00084, facility: #43c6fc, org: #43c6fc, gpe: #fd9720, loc: #fd9720, product: #8e7dff, event: #ffcc00, work_of_art: #ffcc00, language: #ffcc00, date: #2fbbab, time: #2fbbab, percent: #999, money: #999, quantity: #999, ordinal: #999, cardinal: #999 )
 
+//$entities: ( person: #a6e22d, norp: #e00084, facility: #43c6fc, org: #43c6fc, gpe: #fd9720, loc: #fd9720, product: #8e7dff, event: #ffcc00, work_of_art: #ffcc00, language: #ffcc00, date: #2fbbab, time: #2fbbab, percent: #999, money: #999, quantity: #999, ordinal: #999, cardinal: #999 )
+
+$entities: ( person: #32b155, norp: #0897ff, facility: #808080, org: #808080, gpe: #0897ff, loc: #32b155, product: #808080, event: #0897ff, work_of_art: #32b155, language: #808080, date: #0897ff, time: #32b155, percent: #808080, money: #0897ff, quantity: #32b155, ordinal: #808080, cardinal: #808080 )
 .entities
     line-height: 2
 
@@ -26,6 +28,7 @@ $entities: ( person: #a6e22d, norp: #e00084, facility: #43c6fc, org: #43c6fc, gp
         display: inline-block
         vertical-align: middle
         margin: 0 0 0.1rem 0.5rem
+        color: #dddddd
 
     @each $entity, $color in $entities
         &[data-entity="#{$entity}"]

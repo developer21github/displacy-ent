@@ -70,7 +70,7 @@ ul, ol {
 
 .u-heading-1 {
     font: normal bold 2.75rem/1.375 "Sailec", Helvetica, Arial, sans-serif;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 }
 
 .u-heading-2 {
@@ -87,19 +87,23 @@ ul, ol {
     -ms-flex: 1;
     flex: 1;
     position: relative;
-    background: inherit;
-    width: 100%
+    /*background: inherit;*/
+    width: 100%;
+    background: #f7f7f7;
 }
 
 .o-banner {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 1;
     flex: 0 0 1;
-    background: #272822;
-    color: #eee;
+    /*background: #272822;*/
+    /*color: #eee;*/
+    background: #f7f7f7;
+    color: #111111;
     padding: 2rem 3rem;
     width: 100%
 }
+
 
 .o-form {
     display: -webkit-box;
@@ -126,7 +130,7 @@ ul, ol {
     border-radius: .5rem
 }
 
-.c-input {
+menu.c-input.c-input--full.u-text-medium {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -136,12 +140,19 @@ ul, ol {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     position: relative;
-    background:rgba(0, 0, 0, 0.2);
+    /*background:rgba(0, 0, 0, 0.2);*/
+    background: #f1f1f1;
     padding: 0.5rem 1rem;
     margin: 0 0.75rem 0.75rem 0;
-    border-color: #181818;
-    border-radius: .5rem;
-    width: auto
+    /*border-color: #181818;*/
+    /*border-radius: .5rem;*/
+    width: auto;
+    border: 1px solid #d4d4d4;
+}
+
+[data-entity][data-entity="person"] {
+    background: rgba(1,105,176,0.2);
+    border-color: #0169b0;
 }
 
 .c-input.c-input--full {
@@ -478,9 +489,19 @@ body {
 }
 
 .o-banner {
-    padding: 1rem 100px 0 1rem
+    padding: 1rem 100px 0 1rem;
 }
 
 .o-container {
-    overflow-x: auto
+    overflow-x: auto;
+}
+.html-container {
+    padding: 0;
+}
+.download {
+    position: relative;
+}
+.download-ic {
+    position: absolute;
+    top: 7px;
 }

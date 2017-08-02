@@ -5,8 +5,9 @@
 $theme-bg: $color-back !default
 $theme-bg2: $color-back !default
 $theme-color: $color-front !default
-
+$color-fade-white: $new-bg !default
 $field-border-radius: 0.5rem !default
+$no-radius: 0 !default
 $color-error: #f44d61 !default
 
 
@@ -30,6 +31,7 @@ $color-error: #f44d61 !default
 .u-heading-1
     font: normal bold 2.75rem/#{1.375} $font-primary
     margin-bottom: 1rem
+    color: #0169b0
 
 .u-heading-2
     font: normal bold 2rem/#{1.375} $font-primary
@@ -44,7 +46,8 @@ $color-error: #f44d61 !default
 .o-container
     flex: 1
     position: relative
-    background: inherit
+    //background: inherit
+    background: $color-fade-white
     width: 100%
 
 .o-banner
@@ -74,18 +77,23 @@ $color-error: #f44d61 !default
 
 
 //- Components: Input
+.o-form .c-input
+    width: 25%
 
 .c-input
     display: flex
     align-items: center
     flex-flow: row wrap
     position: relative
-    background: $theme-bg2
+    //background: $theme-bg2
+    background: $color-fade-white
     padding: 0.5rem 1rem
     margin: 0 0.75rem 0.75rem 0
-    border-color: $theme-bg2
-    border-radius: $field-border-radius
+    //border-color: $theme-bg2
+    //border-radius: $field-border-radius
+    border-radius: $no-radius
     width: auto
+    border: 1px solid #ddd
 
     &.c-input--full
         flex: 1
